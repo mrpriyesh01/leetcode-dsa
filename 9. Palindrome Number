@@ -1,0 +1,10 @@
+Input: x = 121
+Output: true
+Explanation: 121 reads as 121 from left to right and from right to left.
+code=
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        # Convert the integer to a string
+        a = str(x)
+        # Check if the string is equal to its reverse
+        return a == a[::-1]
